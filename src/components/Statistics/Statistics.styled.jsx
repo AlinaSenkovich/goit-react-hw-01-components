@@ -1,5 +1,6 @@
 import styled from "styled-components";
 //import { bottom, margin } from "styled-system";
+import {getRandomHexColor} from '../getRandomHexColor';
 
 
 export const StatisticsTitle = styled.h2`
@@ -17,6 +18,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin-right: ${p=> p.theme.space[3]}px;
+background-color: ${getRandomHexColor};
 `;
 
 
