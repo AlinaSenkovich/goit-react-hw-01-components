@@ -1,4 +1,3 @@
-import { Box } from 'components/Box';
 import PropTypes from 'prop-types';
 import { FriendListItem } from './FriendListItem';
 
