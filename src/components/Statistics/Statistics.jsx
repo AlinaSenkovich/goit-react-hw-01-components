@@ -1,4 +1,4 @@
-import { StatisticsTitle, StatItem, StatList } from 'components/Statistics/Statistics.styled';
+import {StatItem} from 'components/Statistics/Statistics.styled';
 import PropTypes from 'prop-types';
 import styles from './statistical.module.css';
 
