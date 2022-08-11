@@ -25,3 +25,11 @@ background-color: ${({ isOnline}) => {
   return isOnline ? 'green' : 'red';
 }};
 `;
+
+export const FriendUl = styled.ul`
+width: 335px;
+margin: auto;
+border: solid 1px rgb(211, 221, 221);
+padding: 0;
+margin-top: 10px;
+`;

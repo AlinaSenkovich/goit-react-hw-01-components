@@ -1,28 +1,21 @@
 import { StatisticsTitle, StatItem, StatList } from 'components/Statistics/Statistics.styled';
 import PropTypes from 'prop-types';
-import {Box} from '../Box';
+import styles from './statistical.module.css';
 
 export const Statistics = ({title, stats}) => {
     return (
-       <>
-        <Box 
-            display="flex"
-            flexDirection="column"
-            alignItems="centr"
-            mb="40px">
-            {title && <StatisticsTitle>{title}</StatisticsTitle>}
-            <StatList>
-                {stats.map(({id, label, percentage}) => (
-                    <StatItem key={id}>
-                        <span className='label'>{label}</span>
-                        <span className='ptrcentage'>{percentage}</span>
-                    </StatItem>
-                )
-                )}
-            </StatList>
-            
-        </Box>
-       </>
+        <section className={styles.statistics}>
+    <h2 className={styles.title}>{title}</h2>
+
+    <ul className={styles.stat_list}>
+      {stats.map(stat => (
+        <StatItem className={styles.item} key={stat.id}>
+          <span className={styles.label}>{stat.label}</span>
+          <span className={styles.percentage}>{stat.percentage}%</span>
+        </StatItem>
+      ))}
+    </ul>
+  </section>
     )
 }
 
