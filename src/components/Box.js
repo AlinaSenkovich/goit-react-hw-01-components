@@ -6,9 +6,4 @@ import {
   flexbox
 } from 'styled-system';
 
-export const Box = styled('div')(
-  color,
-  space,
-  layout,
-  flexbox
-);
+export const Box = styled('div')(color, space, layout, flexbox);
